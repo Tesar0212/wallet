@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('../components/head.html', {
+"title": "Main page"
+})
+<body>
+@@include('../components/header.html')
+
+<section class="cryptocurrencies">
+    <div class="container">
+        <h2 class="section-title">Cryptocurrencies that we operate</h2>
+        <p class="cryptocurrencies__description">Our team is increasing the number of cryptocurrency pairs
+            on-a-regular-basis. Discover cryptocurrencies that we currently support, as well as which new
+            cryptocurrencies will appear in our exchange module and trading terminal in the near future.
+        </p>
+        <ul class="cryptocurrencies__list"></ul>
+        <button class="cryptocurrencies__see-all">
+            See all
+        </button>
+    </div>
+</section>
+<section class="blog">
+    <div class="container">
+        <div class="blog__header">
+            <h2 class="section-title">Blog</h2>
+            <a href="#" class="blog__all-news">See all news</a>
+        </div>
+        <div class="blog__content">
+            <article class="blog__news-main .news-main">
+                <div class="news-main__img">
+                    <picture>
+                        <source srcset="images/News-Img-1@2x.png 2x, images/News-Img-1.png 1x"/>
+                        <img src="images/News-Img-1.png" alt="News image">
+                    </picture>
+                </div>
+                <div class="news-main__content">
+                    <div class="news-main__date">12 Oct 2021</div>
+                    <h3 class="news-main__title">
+                        How Asset Tokenization Can
+                        Help Business Entrepreneurs
+                    </h3>
+                    <p class="news-main__description">
+                        Digital currencies made a lot of buzz in the past 10 years.
+                        In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.),
+                        hundreds of coins have appeared. But despite the significant figures for market cap, the actual
+                        impact on the economy has not yet been felt.
+                    </p>
+                    <div class="news-main__author">
+                        <div class="news-main__author-icon">
+                            <picture>
+                                <source srcset="images/Avatar@2x.png 2x, images/Avatar.png 1x"/>
+                                <img src="images/Avatar.png" alt="Author avatar">
+                            </picture>
+                        </div>
+                        <div class="news-main__author-info">
+                            <p class="news-main__author-name">Daniel Frost</p>
+                            <p class="news-main__author-profession">Сryptocurrency expert</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="blog__news-list swiper">
+                <div class="blog__news-wrapper swiper-wrapper">
+                    <article class="blog__news-item news-item swiper-slide">
+                        <a href="#">
+                            <div class="news-item__img">
+                                <picture>
+                                    <source srcset="images/News-Img-1@2x.png 2x, images/News-Img-1.png 1x"/>
+                                    <img src="images/News-Img-1.png" alt="News image">
+                                </picture>
+                                <div class="news-item__date">12 Oct 2021</div>
+                                <p class="news-item__description">Lacerat tristique orci ornare tortor diam. Vitae
+                                    faucibus sed odio fringilla facilis...
+                                </p>
+                            </div>
+                        </a>
+                        <div class="news-item__footer">
+                            <div class="news-item__author-icon">
+                                <picture>
+                                    <source srcset="images/Avatar@2x.png 2x, images/Avatar.png 1x"/>
+                                    <img src="images/Avatar.png" alt="Author avatar">
+                                </picture>
+                            </div>
+                            <div class="news-item__author-info">
+                                <p class="news-item__author-name">Daniel Frost</p>
+                                <p class="news-item__author-profession">Сryptocurrency expert</p>
+                            </div>
+                        </div>
+                        <a href="#" class="news-item__news-link">Read full article</a>
+                    </article>
+                    <article class="blog__news-item news-item swiper-slide">
+                        <a href="#">
+                            <div class="news-item__img">
+                                <picture>
+                                    <source srcset="images/News-Img-2@2x.png 2x, images/News-Img-2.png 1x"/>
+                                    <img src="images/News-Img-2.png" alt="News image">
+                                </picture>
+                                <div class="news-item__date">12 Oct 2021</div>
+                                <p class="news-item__description">Lacerat tristique orci ornare tortor diam. Vitae
+                                    faucibus sed odio fringilla facilis...
+                                </p>
+                            </div>
+                        </a>
+                        <div class="news-item__footer">
+                            <div class="news-item__author-icon">
+                                <picture>
+                                    <source srcset="images/Avatar2@2x.png 2x, images/Avatar2.png 1x"/>
+                                    <img src="images/Avatar2.png" alt="Author avatar">
+                                </picture>
+                            </div>
+                            <div class="news-item__author-info">
+                                <p class="news-item__author-name">Mark Thompson</p>
+                                <p class="news-item__author-profession">Entrepreneur</p>
+                            </div>
+                        </div>
+                        <a href="#" class="news-item__news-link">Read full article</a>
+                    </article>
+                    <article class="blog__news-item news-item swiper-slide">
+                        <a href="#">
+                            <div class="news-item__img">
+                                <picture>
+                                    <source srcset="images/News-Img-3@2x.png 2x, images/News-Img-3.png 1x"/>
+                                    <img src="images/News-Img-3.png" alt="News image">
+                                </picture>
+                                <div class="news-item__date">12 Oct 2021</div>
+                                <p class="news-item__description">Lacerat tristique orci ornare tortor diam. Vitae
+                                    faucibus sed odio fringilla facilis...
+                                </p>
+                            </div>
+                        </a>
+                        <div class="news-item__footer">
+                            <div class="news-item__author-icon">
+                                <picture>
+                                    <source srcset="images/Avatar@2x.png 2x, images/Avatar.png 1x"/>
+                                    <img src="images/Avatar.png" alt="Author avatar">
+                                </picture>
+                            </div>
+                            <div class="news-item__author-info">
+                                <p class="news-item__author-name">Daniel Frost</p>
+                                <p class="news-item__author-profession">Сryptocurrency expert</p>
+                            </div>
+                        </div>
+                        <a href="#" class="news-item__news-link">Read full article</a>
+                    </article>
+                </div>
+                <div class="blog__slider-pagination swiper-pagination"></div>
+            </div>
+        </div>
+        <a href="#" class="blog__all-news">See all news</a>
+    </div>
+</section>
+<section class="where-are-we">
+    <div class="container">
+        <div class="where-are-we__content">
+            <h2 class="section-title">Where are we?</h2>
+            <div class="where-are-we__list">
+                <div class="where-are-we__item active">
+                    <button class="where-are-we__city">Talin</button>
+                    <address class="where-are-we__address">Tallinn, Kesklinna linnaosa, Poordi tn 3-75, 10156,
+                        Estonia.
+                    </address>
+                </div>
+                <div class="where-are-we__item">
+                    <button class="where-are-we__city">Kiev</button>
+                    <address class="where-are-we__address">Kiev, Kesklinna linnaosa, Poordi tn 3-75, 10156, Ukraine.
+                    </address>
+                </div>
+                <div class="where-are-we__item">
+                    <button class="where-are-we__city">Dubai</button>
+                    <address class="where-are-we__address">Dubai, Kesklinna linnaosa, Poordi tn 3-75, 10156, UAE.
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="where-are-we__map">
+            <picture>
+                <source srcset="images/map@2x.png 2x, images/map.png 1x"/>
+                <img src="images/map.png" alt="Map illustration">
+            </picture>
+        </div>
+    </div>
+</section>
+<section class="contact-us">
+    <div class="container">
+        <h2 class="section-title">Contact us</h2>
+        <div class="contact-us__managers">
+            <div class="contact-us__manager-container">
+                <div class="contact-us__manager-card manager-card manager-card--first">
+                    <div class="manager-card__img">
+                        <picture>
+                            <source srcset="images/ManagerAvatar@2x.png 2x, images/ManagerAvatar.png 1x"/>
+                            <img class="manager-card__manager-avatar" src="images/ManagerAvatar.png"
+                                 alt="Map illustration">
+                        </picture>
+                        <div class="manager-card__img-overlay">
+                            <a href="#"><img src="images/Telegram.svg" alt="Telegram"></a>
+                            <a href="#"><img src="images/Mail.svg" alt="Mail"></a>
+                        </div>
+                    </div>
+                    <div class="manager-card__info">
+                        <p class="manager-card__name">Ralph Edwards</p>
+                        <p class="manager-card__profession">Community manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-us__manager-container">
+                <div class="contact-us__manager-card manager-card manager-card--second">
+                    <div class="manager-card__img">
+                        <picture>
+                            <source srcset="images/ManagerAvatar2@2x.png 2x, images/ManagerAvatar2.png 1x"/>
+                            <img class="manager-card__manager-avatar" src="images/ManagerAvatar2.png"
+                                 alt="Map illustration">
+                        </picture>
+                        <div class="manager-card__img-overlay">
+                            <a href="#"><img src="images/Telegram.svg" alt="Telegram"></a>
+                            <a href="#"><img src="images/Mail.svg" alt="Mail"></a>
+                        </div>
+                    </div>
+                    <div class="manager-card__info">
+                        <p class="manager-card__name">Arlene McCoy</p>
+                        <p class="manager-card__profession">Community manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us__form-container">
+            <h2 class="section-title">Contact us</h2>
+            <p class="contact-us__info">Use this form to reach out to us</p>
+            <form action="#" class="contact-us__form">
+                <div class="contact-us__form-item">
+                    <label for="contact-us__email" class="contact-us__label">Email</label>
+                    <input type="email" class="contact-us__text-input" id="contact-us__email" name="email"
+                           placeholder="nick@example.com" required>
+                </div>
+                <div class="contact-us__form-item">
+                    <label for="contact-us__phone" class="contact-us__label">Phone</label>
+                    <input type="tel" class="contact-us__text-input" id="contact-us__phone" name="phone"
+                           placeholder="+44 (000) 000-00-00" required>
+                </div>
+                <div class="contact-us__form-item">
+                    <label for="contact-us__select" class="contact-us__label">Country</label>
+                    <div class="contact-us__select-container">
+                        <select name="country" id="contact-us__select" class="contact-us__select" required>
+<!--                            <option value="" hidden disabled></option>-->
+<!--                            <option value="1" selected><span></span>United Kingdom</option>-->
+<!--                            <option value="2">United Kingdom</option>-->
+<!--                            <option value="3">United Kingdom</option>-->
+                        </select>
+                        <div class="contact-us__sex" id="contact-us__sex">
+                            <div class="contact-us__sex-item">
+                                <input name="sex" type="radio" value="man" id="contact-us__man" class="contact-us__sex-radio" required>
+                                <label class="contact-us__sex-checkbox" for="contact-us__man"></label>
+                                <label class="contact-us__sex-label" for="contact-us__man">Man</label>
+                            </div>
+                            <div class="contact-us__sex-item">
+                                <input name="sex" type="radio" value="woman" id="contact-us__woman" class="contact-us__sex-radio" required>
+                                <label class="contact-us__sex-checkbox" for="contact-us__woman"></label>
+                                <span class="contact-us__sex-label">Woman</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-us__form-item">
+                    <label for="contact-us__message" class="contact-us__label">Message</label>
+                    <div class="contact-us__message-counter">
+                        <span class="contact-us__message-current">0</span>
+                        /
+                        <span class="contact-us__message-total">140</span>
+                    </div>
+                    <textarea name="message" class="contact-us__textarea" id="contact-us__message"
+                              placeholder="Enter your message here" required></textarea>
+                </div>
+                <div class="contact-us__form-item contact-us__form-item--flex">
+                    <input name="success" type="checkbox" value="success" id="contact-us__checkbox"
+                           class="contact-us__checkbox">
+                    <label for="contact-us__checkbox" class="contact-us__checkbox-custom"></label>
+                    <label for="contact-us__checkbox" class="contact-us__checkbox-label">By clicking on the button, you
+                        consent to the processing <a href="#">of data processing.</a> <br>
+                        and compiled with <a href="#">confidentiality documents</a></label>
+                </div>
+                <div class="contact-us__form-item contact-us__form-item--input">
+                    <input type="submit" id="contact-us__submit" class="contact-us__submit" value="Send message">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="faq">
+    <div class="container">
+        <h2 class="section-title">Popular Questions</h2>
+        <div class="faq__accordion">
+            <div class="faq__accordion-item">
+                <h3 class="faq__accordion-header">
+                    <button class="faq__accordion-button">
+                        <span class="faq__accordion-icon">
+                            <img src="images/AccordionIcon1.svg" alt="Liquidity illustration">
+                        </span>
+                        Liquidity
+                    </button>
+                </h3>
+                <p class="faq__accordion-content">
+                    Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
+                    terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on the economy has not yet been
+                    felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
+                    terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on the economy has not yet been
+                    felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
+                    of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on.
+                </p>
+            </div>
+            <div class="faq__accordion-item">
+                <h3 class="faq__accordion-header">
+                    <button class="faq__accordion-button">
+                        <span class="faq__accordion-icon">
+                            <img src="images/AccordionIcon2.svg" alt="Liquidity illustration">
+                        </span>
+                        Status migration
+                    </button>
+                </h3>
+                <p class="faq__accordion-content">
+                    Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
+                    terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on the economy has not yet been
+                    felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
+                    terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on the economy has not yet been
+                    felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
+                    of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on.
+                </p>
+            </div>
+            <div class="faq__accordion-item">
+                <h3 class="faq__accordion-header">
+                    <button class="faq__accordion-button">
+                        <span class="faq__accordion-icon">
+                            <img src="images/AccordionIcon3.svg" alt="Liquidity illustration">
+                        </span>
+                        Team
+                    </button>
+                </h3>
+                <p class="faq__accordion-content">
+                    Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
+                    terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on the economy has not yet been
+                    felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
+                    terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on the economy has not yet been
+                    felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
+                    of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on.
+                </p>
+            </div>
+            <div class="faq__accordion-item show">
+                <h3 class="faq__accordion-header">
+                    <button class="faq__accordion-button">
+                        <span class="faq__accordion-icon">
+                            <img src="images/AccordionIcon4.svg" alt="Liquidity illustration">
+                        </span>
+                        Roadmap
+                    </button>
+                </h3>
+                <p class="faq__accordion-content">
+                    Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
+                    terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on the economy has not yet been
+                    felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
+                    terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on the economy has not yet been
+                    felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
+                    of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on.
+                </p>
+            </div>
+            <div class="faq__accordion-item">
+                <h3 class="faq__accordion-header">
+                    <button class="faq__accordion-button">
+                        <span class="faq__accordion-icon">
+                            <img src="images/AccordionIcon5.svg" alt="Liquidity illustration">
+                        </span>
+                        Legal
+                    </button>
+                </h3>
+                <p class="faq__accordion-content">
+                    Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
+                    terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on the economy has not yet been
+                    felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
+                    terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on the economy has not yet been
+                    felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
+                    of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on.
+                </p>
+            </div>
+            <div class="faq__accordion-item">
+                <h3 class="faq__accordion-header">
+                    <button class="faq__accordion-button">
+                        <span class="faq__accordion-icon">
+                            <img src="images/AccordionIcon6.svg" alt="Liquidity illustration">
+                        </span>
+                        Security
+                    </button>
+                </h3>
+                <p class="faq__accordion-content">
+                    Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
+                    terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on the economy has not yet been
+                    felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount of
+                    terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on the economy has not yet been
+                    felt. Digital currencies made a lot of buzz in the past 10 years. In addition to a vast amount
+                    of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But
+                    despite the significant figures for market cap, the actual impact on.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="buy-cryptocurrency">
+    <div class="container">
+        <div class="buy-cryptocurrency__container">
+            <div class="buy-cryptocurrency__left">
+                <h2 class="buy-cryptocurrency__title">Buy cryptocurrency now!</h2>
+                <p class="buy-cryptocurrency__description">Phasellus nam lacinia rhoncus id eget purus nulla er
+                    ultrices. <br>
+                    Sapien dignissim dui, dignissim convalli nam lacinia er purus.
+                </p>
+                <div class="buy-cryptocurrency__img">
+                    <img src="images/BitcoinCatBgMobile.svg" alt="Cat play Bitcoin">
+                </div>
+                <button class="buy-cryptocurrency__button">Buy cryptocurrency</button>
+            </div>
+            <div class="buy-cryptocurrency__right">
+                <img src="images/BitcoinCatBg.svg" alt="Cat play Bitcoin">
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('../components/footer.html')
+<script src="js/app.js"></script>
+</body>
+</html>

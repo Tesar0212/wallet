@@ -1,0 +1,705 @@
+/*------------------------Contact us------------------------*/
+
+.contact-us {
+  padding-top: 105px;
+  @include xs {
+    padding-top: 29px;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  &__managers {
+    max-width: 634px;
+    width: 100%;
+    padding-top: 87px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include sm {
+      max-width: 100%;
+    }
+    @include xs {
+      padding: 0 9px;
+      gap: 44px;
+    }
+
+  }
+
+  &__manager-card {
+    width: 280px;
+    height: 320px;
+    position: relative;
+    @include xs {
+      height: 374px;
+      max-width: 294px;
+      width: 100%;
+    }
+  }
+
+  &__info {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $secondary_hover_text;
+  }
+
+  &__form-container {
+    min-width: 370px;
+    padding-right: 70px;
+    max-width: 540px;
+    width: 100%;
+    @include xl {
+      padding-right: unset;
+      max-width: 500px;
+    }
+    @include sm {
+      max-width: 100%;
+    }
+    @include xs {
+      min-width: 320px;
+      padding: 0 9px;
+    }
+
+    .section-title {
+      @include sm {
+        display: none;
+      }
+    }
+
+    .contact-us__info {
+      margin-bottom: 20px;
+      @include sm {
+        text-align: center;
+      }
+      @include xs {
+        margin-top: 0;
+        margin-bottom: 23px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include xs {
+      gap: 22px;
+    }
+  }
+
+  &__form-item {
+    max-width: 480px;
+    position: relative;
+    @include sm {
+      max-width: 100%;
+    }
+
+    &--input {
+      @include sm {
+        margin: 0 auto;
+      }
+    }
+
+    &--flex {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .just-validate-error-label {
+      position: absolute;
+      bottom: -10px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: #F5332D;
+      width: 100%;
+    }
+
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: $secondary_active_text;
+  }
+
+  &__text-input {
+    background: $bg_gray;
+    border: 1px solid $secondary_inactive_text;
+    border-radius: 4px;
+    width: 100%;
+    padding: 12px 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    @include xs {
+      font-size: 13px;
+    }
+
+    &::placeholder {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: $secondary_hover_text;
+    }
+
+    &.just-validate-error-field {
+      outline: #F5332D;
+      border-color: #F5332D;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__select-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include xs {
+      flex-direction: column;
+      align-items: unset;
+    }
+
+    .choices__inner {
+      background: $bg_gray;
+      border: 1px solid $secondary_inactive_text;
+      border-radius: 4px;
+      padding: 9px 16px;
+
+    }
+
+    .choices {
+      max-width: 235px;
+      width: 100%;
+      margin-bottom: unset;
+      @include xs {
+        max-width: 100%;
+      }
+
+      &.is-focused {
+        .choices__inner{
+          outline: $primary_blue;
+          border-color: $primary_blue;
+        }
+      }
+    }
+
+    .choices__list--dropdown {
+      margin-top: 3px;
+    }
+
+    .choices__item--selectable{
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px!important;
+      line-height: 140%;
+      text-align: start;
+      letter-spacing: 0.01em;
+      color: $light_black;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable{
+      padding: 9px 16px;
+    }
+
+    .choices__list--single {
+      padding: unset;
+    }
+
+    .is-selected {
+      position: relative;
+      color: $primary_blue;
+      &:before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 5px);
+        right: 10px;
+        width: 10px;
+        height: 10px;
+        background-image: url("../images/V.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+  }
+
+  &__select {
+    background: $bg_gray;
+    border: 1px solid $secondary_inactive_text;
+    border-radius: 4px;
+    padding: 9px 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: start;
+    letter-spacing: 0.01em;
+    color: $light_black;
+    max-width: 235px;
+    width: 100%;
+    @include xs {
+      max-width: 100%;
+    }
+
+    option {
+      span {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: red;
+        border-radius: 100%;
+      }
+    }
+
+  }
+
+  &__sex {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 10px;
+    @include xs {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__sex-item {
+    display: flex;
+
+    input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+  }
+
+  &__sex-item input + &__sex-checkbox {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  &__sex-radio.just-validate-error-field + &__sex-checkbox{
+      margin-bottom: 20px;
+  }
+
+  &__sex-item input + &__sex-checkbox::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid $primary_blue;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .1s;
+    cursor: pointer;
+  }
+
+  &__sex-item input:checked + &__sex-checkbox::before {
+    background-color: $primary_white;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='10' cy='10' r='10' fill='%233139CE'/%3e%3c/svg%3e ");
+  }
+
+  &__sex-item input:disabled + &__sex-checkbox::before {
+    opacity: .2;
+  }
+
+  &__sex-item input:focus + &__sex-checkbox::before,
+  &__sex-item input:not(:disabled):not(:checked) + &__sex-checkbox:hover::before {
+    background-color: $primary_lavanda;
+  }
+
+  &__sex-label {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: $light_black;
+    margin-left: 10px;
+  }
+
+  &__textarea {
+    width: 100%;
+    min-height: 98px;
+    padding: 11px 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    background: $bg_gray;
+    border: 1px solid $secondary_inactive_text;
+    border-radius: 4px;
+    resize: none;
+
+    &::placeholder {
+      color: $secondary_hover_text;
+    }
+
+    &.just-validate-error-field {
+      outline: #F5332D;
+      border-color: #F5332D;
+      margin-bottom: 10px;
+    }
+
+    &.error {
+      outline: #F5332D;
+      border-color: #F5332D;
+    }
+  }
+
+  &__message-counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #9B9B9B;
+
+    &.error {
+      color: #F5332D;
+    }
+  }
+
+  &__checkbox-label {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: $secondary_disabled_text;
+    @include xs {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__checkbox + &__checkbox-custom {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  &__checkbox.just-validate-error-field + &__checkbox-custom{
+    margin-bottom: 20px;
+  }
+
+  &__checkbox + &__checkbox-custom::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid $primary_gray;
+    border-radius: 0.25em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    transition: .1s;
+    cursor: pointer;
+  }
+
+  &__checkbox:checked + &__checkbox-custom::before {
+    border-color: $primary_blue;
+    background-color: $bg_gray;
+    background-image: url("../images/V.svg");
+  }
+
+  &__checkbox:focus + &__checkbox-custom::before,
+  &__checkbox:not(:disabled):not(:checked) + &__checkbox-custom:hover::before {
+    transition: .1s;
+    border-color: $primary_blue;
+  }
+
+  &__checkbox:disabled + label::before {
+    background-color: $bg_gray;
+    border-color: $secondary_inactive_text;
+  }
+
+  &__submit {
+    width: 200px;
+    height: 41px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: $primary_blue;
+    background: $primary_lavanda;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .25s;
+    outline: 0;
+    @include sm {
+      width: 244px;
+    }
+
+    &:hover,
+    &:focus {
+      background: $secondary_pressed;
+      color: $primary_white;
+    }
+
+    &:disabled {
+      color: $secondary_pressed;
+      background: $primary_lavanda;
+    }
+  }
+
+  &__manager-container {
+    @include lg {
+      width: 100%;
+      display: flex;
+    }
+
+    &:first-child {
+      @include lg {
+        justify-content: flex-start;
+      }
+    }
+
+    &:last-child {
+      @include lg {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    @include sm {
+      flex-direction: column;
+    }
+    @include xs {
+      gap: 24px;
+    }
+
+    > .section-title {
+      display: none;
+      visibility: hidden;
+      @include sm {
+        display: flex;
+        justify-content: center;
+        visibility: visible;
+      }
+      @include xs {
+        justify-content: flex-start;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+}
+
+.manager-card {
+
+  &__img {
+    position: absolute;
+    z-index: 2;
+
+    .manager-card__manager-avatar {
+      @include xs {
+        width: 244px;
+        height: 244px;
+      }
+    }
+  }
+
+  &__img-overlay {
+    position: absolute;
+    width: 84px;
+    height: 35px;
+    bottom: 16px;
+    left: 16px;
+    background: rgba(72, 72, 72, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @include xs {
+      width: 154px;
+      height: 44px;
+      justify-content: space-around;
+      bottom: 22px;
+      left: 18px;
+    }
+
+    a {
+      height: 20px;
+      width: 20px;
+    }
+
+    img {
+      transition: .25s;
+      @include xs {
+        width: 22px;
+        height: 22px;
+        transition: .25s;
+      }
+
+      &:hover {
+        filter: brightness(60%);
+      }
+    }
+  }
+
+
+  &__name {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: $primary_dark;
+  }
+
+  &__info {
+    width: 216px;
+    height: 216px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background: $primary_white;
+    box-shadow: $shadow_card_faq;
+    border-radius: 8px;
+    z-index: 1;
+
+    .manager-card__name {
+      margin-bottom: 6px;
+      @include xs {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &--second {
+    .manager-card__info {
+      top: 0;
+      left: 0;
+      justify-content: flex-start;
+      align-items: flex-start;
+      @include xs {
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 20px;
+      }
+    }
+
+    .manager-card__img {
+      right: 0;
+      bottom: 0;
+    }
+
+    .manager-card__img-overlay {
+      display: none;
+      @include sm {
+        display: flex;
+        left: unset;
+        right: 20px;
+        bottom: 20px;
+      }
+      @include xs {
+        bottom: 23px;
+        right: 18px;
+      }
+    }
+  }
+
+  &--first {
+    .manager-card__info {
+      bottom: 0;
+      right: 0;
+      justify-content: flex-end;
+      align-items: flex-start;
+      @include xs {
+        align-items: center;
+        padding-bottom: 36px;
+        padding-left: 9px;
+      }
+    }
+
+    .manager-card__img {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__profession {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $secondary_hover_text;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

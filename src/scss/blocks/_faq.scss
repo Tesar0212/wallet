@@ -1,0 +1,133 @@
+/*------------------------FAQ------------------------*/
+
+.faq {
+  padding-top: 98px;
+  @include xs {
+    padding-top: 44px;
+  }
+
+  &__accordion {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    @include xs {
+      margin-top: 21px;
+      gap: 25px;
+      padding: 0 9px;
+    }
+  }
+
+  &__accordion-button {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background: transparent;
+    align-items: center;
+    gap: 24px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: $primary_dark;
+    text-align: start;
+    position: relative;
+    @include xs {
+      font-size: 18px;
+      gap: 12px;
+      padding: 20px 16px 16px 16px;
+    }
+
+    &:after,
+    &:before {
+      position: absolute;
+      content: '';
+      width: 21px;
+      height: 3px;
+      background: $secondary_active_text;
+      right: 40px;
+      opacity: 1;
+      transition: 0.3s;
+      @include xs {
+        right: 18px;
+      }
+    }
+
+    &:after {
+      transform: rotate(-90deg);
+    }
+
+    img {
+      @include xs {
+        max-width: 38px;
+        max-height: 38px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__accordion-item {
+    background: $primary_white;
+    box-shadow: 0 4px 11px rgba(56, 57, 77, 0.1);
+    border-radius: 16px;
+    transition: 0.4s;
+
+    &.show {
+      background: $primary_bg_gray;
+      border-radius: 16px;
+      transition: 0.4s;
+
+      .faq__accordion-button {
+        &:after {
+          transform: rotate(-180deg);
+          background: $secondary_hover_text;
+        }
+      }
+    }
+  }
+
+  &__accordion-icon {
+    display: inline-block;
+    max-width: 53px;
+    max-height: 43px;
+    width: 100%;
+    height: 100%;
+    @include xs {
+      max-width: 43px;
+      max-height: 43px;
+    }
+  }
+
+  &__accordion-item.show &__accordion-button:before {
+    transform: rotate(-90deg);
+    visibility: hidden;
+    opacity: 0;
+
+  }
+
+  &__accordion-content {
+    padding: 0 40px 40px 40px;
+    visibility: collapse;
+    display: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $secondary_hover_text;
+    @include xs {
+      padding: 0 16px 16px 16px;
+      font-size: 14px;
+    }
+  }
+
+  &__accordion-item.show &__accordion-content {
+    visibility: visible;
+    display: block;
+  }
+
+}
+

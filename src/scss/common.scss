@@ -1,0 +1,16 @@
+@import "./node_modules/choices.js/public/assets/styles/choices.min";
+
+@import './global/variables';
+@import './global/mixins';
+@import "./global/fonts";
+@import './global/global';
+
+@import "./blocks/header";
+@import "./blocks/navbar";
+@import "./blocks/cryptocurrencies";
+@import "./blocks/blog";
+@import "./blocks/where-are-we";
+@import "./blocks/contact-us";
+@import "./blocks/faq";
+@import "./blocks/buy-cryptocurrency";
+@import "./blocks/footer";

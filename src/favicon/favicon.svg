@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="26" height="40"><svg width="26" height="40" viewBox="0 0 26 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.7822 33.0012L6.25626 29.5918L3.54329 33.497L3.3722 33.4419L3.36609 33.448L19.5156 38.357L15.7822 33.0012Z" fill="#5C3DF5"></path>
+<path d="M25.8093 38.5408L12.8066 20.1719L10.0569 16.2912L6.53127 11.3088L3.7633 7.3975L3.75719 7.38525L1.23975 8.27891C0.139893 8.67065 -0.281719 9.99889 0.390415 10.9538L1.808 12.9859L7.0812 20.533L9.82472 24.4627L15.7823 33.0014L19.5218 38.3572L24.8011 39.9609C25.6382 40.2118 26.3225 39.257 25.8093 38.5408Z" fill="#5C3DF5"></path>
+<path d="M15.9043 7.97874L10.0568 16.291L12.8064 20.1716L25.8091 1.45383C26.3285 0.719315 25.6014 -0.247793 24.7521 0.0521329L3.75706 7.39725L6.52502 11.3085L15.9043 7.97874Z" fill="#5C3DF5"></path>
+<path d="M12.8068 20.1719L18.6177 11.8107L15.9047 7.979L10.0571 16.2912L12.8068 20.1719Z" fill="url(#paint0_linear_615_2111)"></path>
+<path d="M6.25605 29.5917L9.81836 24.4624L7.07483 20.5327L0.353496 30.0875C-0.355299 31.0669 0.115194 32.4563 1.27004 32.8052L3.37199 33.4418L3.54308 33.4907L6.25605 29.5917Z" fill="url(#paint1_linear_615_2111)"></path>
+<defs>
+<linearGradient id="SvgjsLinearGradient1001" x1="14.3364" y1="7.97783" x2="14.3336" y2="19.4445" gradientUnits="userSpaceOnUse">
+<stop offset="0.160259" stop-color="#5C3DF5"></stop>
+<stop offset="0.289301" stop-color="#5C3DF5"></stop>
+<stop offset="1" stop-color="#381F9B"></stop>
+</linearGradient>
+<linearGradient id="SvgjsLinearGradient1000" x1="-0.833523" y1="35.3331" x2="9.61092" y2="20.7775" gradientUnits="userSpaceOnUse">
+<stop offset="0.160259" stop-color="#5C3DF5"></stop>
+<stop offset="0.445025" stop-color="#5C3DF5"></stop>
+<stop offset="0.885315" stop-color="#381F9B"></stop>
+</linearGradient>
+</defs>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: contrast(0.8333333333333334) brightness(1.7); } }
+</style></svg>

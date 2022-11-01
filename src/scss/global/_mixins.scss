@@ -1,0 +1,40 @@
+//@mixin retina($density: 2) {
+//  @media only screen and (-webkit-min-device-pixel-ratio: $density),
+//  only screen and (min--moz-device-pixel-ratio: $density),
+//  only screen and (-o-min-device-pixel-ratio: #{$density}/1),
+//  only screen and (min-device-pixel-ratio: $density),
+//  only screen and (min-resolution: 192dpi),
+//  only screen and (min-resolution: $density dppx) {
+//    @content;
+//  }
+//}
+
+@mixin xl {
+  @media screen and (max-width: 1440px) {
+    @content
+  }
+}
+
+@mixin lg {
+  @media screen and (max-width: 1200px) {
+    @content
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: 992px) {
+    @content
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: 768px) {
+    @content
+  }
+}
+
+@mixin xs {
+  @media screen and (max-width: 576px) {
+    @content
+  }
+}

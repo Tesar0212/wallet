@@ -1,0 +1,253 @@
+.navbar {
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 167px;
+    @include md {
+      gap: 26px;
+    }
+  }
+
+  &__brand img {
+    max-height: 40px;
+    height: 100%;
+    max-width: 117px;
+    width: 100%;
+    @include xs {
+      max-width: 82px;
+      max-height: 28px;
+    }
+  }
+
+  &__toggler {
+    display: none;
+    background: transparent;
+    position: relative;
+    padding: 0;
+
+    span {
+
+      @include md {
+        display: inline-block;
+        background: $primary_white;
+        width: 20px;
+        height: 2px;
+        position: relative;
+        transition: 0.3s;
+
+        &:before,
+        &:after {
+          content: '';
+          background: $primary_white;
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          transform: rotate(0);
+          transition: 0.3s;
+          left: 0;
+        }
+
+        &:before {
+          top: -6px;
+        }
+
+        &:after {
+          bottom: -6px;
+        }
+      }
+    }
+
+    &.active {
+      @include md {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    &.active span {
+      @include md {
+        background: transparent;
+        transition: none;
+        width: 30px;
+        &:before {
+          top: 0;
+          transform: rotate(45deg);
+          transition: 0.3s;
+        }
+        &:after {
+          bottom: 0;
+          transform: rotate(-45deg);
+          transition: 0.3s;
+        }
+      }
+    }
+
+    @include md {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      z-index: 1001;
+      cursor: pointer;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+
+  &__list-item a {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    color: $secondary_hover_text;
+    transition: .25s;
+    position: relative;
+    outline: 0;
+    @include md {
+      font-size: 26px;
+      line-height: 34px;
+      text-align: center;
+      color: $primary_white;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: -2px;
+      left: 0;
+      background: $secondary_hover_text;
+      opacity: 0;
+      transition: 0.25s;
+    }
+
+    &:hover:after,
+    &:focus:after{
+      opacity: 1;
+    }
+  }
+
+  &__collapse {
+    &.active {
+      @include md {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.4s;
+      }
+    }
+
+    @include md {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background: $primary_dark;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: collapse;
+      opacity: 0;
+      transition: 0.4s;
+    }
+  }
+
+  &__list-item {
+    &:last-child {
+      display: none;
+      @include md {
+        display: block;
+      }
+    }
+  }
+
+  &__button-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__button {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: $primary_white;
+    width: 124px;
+    height: 41px;
+    background: transparent;
+    border-radius: 4px;
+    outline: 0;
+
+    &.navbar__button--log-in {
+      border: 1px solid $primary_lavanda;
+      transition: .25s;
+      @include sm {
+        width: 98px;
+        height: 44px;
+        background: $primary_blue;
+        border-radius: 4px;
+        border: none;
+        transition: .25s;
+      }
+    }
+
+    &.navbar__button.navbar__button--log-in:hover,
+    &.navbar__button.navbar__button--log-in:focus {
+      color: $primary_blue;
+      border: 1px solid $primary_lavanda;
+      background: $primary_lavanda;
+      @include sm {
+        background: $secondary_pressed;
+        color: $primary_white;
+      }
+    }
+
+    &.navbar__button--log-in:disabled {
+      border: 1px solid $secondary_disabled_text;
+      color: $secondary_disabled_text;
+      @include sm {
+        background: $primary_lavanda;
+        color: $secondary_pressed;
+      }
+    }
+
+    &.navbar__button--sign-in {
+      background: $primary_blue;
+      transition: .25s;
+      @include sm {
+        display: none;
+      }
+    }
+
+    &.navbar__button--sign-in:hover,
+    &.navbar__button--sign-in:focus {
+      color: $primary_white;
+      background: $secondary_pressed;
+    }
+
+
+    &.navbar__button--sign-in:disabled {
+      background: $primary_lavanda;
+      color: $secondary_pressed;
+    }
+  }
+
+}
+
+

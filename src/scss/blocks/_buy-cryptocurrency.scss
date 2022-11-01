@@ -1,0 +1,161 @@
+/*------------------------Buy cryptocurrency------------------------*/
+
+.buy-cryptocurrency {
+  padding-top: 121px;
+  padding-bottom: 100px;
+  @include xs {
+    padding: 66px 0 57px 0;
+  }
+
+  .container {
+    @include xs {
+      padding-left: unset;
+      padding-right: unset;
+    }
+  }
+
+  &__container {
+    display: flex;
+    background: linear-gradient(180deg, #1E1E46 7.55%, #25253E 132.12%);
+    color: $primary_lavanda;
+    justify-content: space-between;
+    border-radius: 8px;
+    min-height: 316px;
+    @include lg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include xs {
+      border-radius: unset;
+    }
+  }
+
+  &__button {
+    background: $secondary_light;
+    border-radius: 4px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: $primary_blue;
+    width: 229px;
+    height: 41px;
+    transition: .25s;
+    outline: 0;
+
+    &:hover,
+    &:focus {
+      background: $secondary_pressed;
+      color: $primary_white;
+
+    }
+
+    &:disabled {
+      color: $secondary_pressed;
+      background: $primary_lavanda;
+    }
+  }
+
+  &__left {
+    padding: 60px 30px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 468px;
+    @include lg {
+      width: 100%;
+      align-items: center;
+      padding-bottom: unset;
+      padding-right: 60px;
+    }
+    @include xs {
+      padding: 24px 0 24px 24px;
+      min-width: unset;
+      align-items: flex-start;
+      gap: unset;
+    }
+
+    .buy-cryptocurrency__button {
+      @include xs {
+        margin: 0 auto;
+        max-width: 289px;
+        width: 100%;
+        transition: .25s;
+      }
+    }
+  }
+
+  &__title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: $primary_white;
+    opacity: 0.99;
+    max-width: 491px;
+    @include xs {
+      margin-bottom: 16px;
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  &__description {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $primary_white;
+    max-width: 436px;
+    @include xs {
+      max-width: 314px;
+    }
+  }
+
+  &__img {
+    display: none;
+    @include xs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      margin-top: -55px;
+      margin-bottom: -15px;
+    }
+  }
+
+  &__right {
+    max-width: 703px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    @include lg {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    @include xs {
+      display: none;
+    }
+
+    img {
+      margin-top: 23px;
+      width: 100%;
+      height: auto;
+      max-height: 293px;
+      @include lg {
+        max-height: 316px;
+        max-width: 650px;
+      }
+    }
+  }
+
+}
+
+
+

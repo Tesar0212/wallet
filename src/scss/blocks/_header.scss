@@ -1,0 +1,189 @@
+/*------------------------Header------------------------ */
+
+header {
+  background-color: $primary_dark;
+}
+
+.header {
+  &__navbar {
+    padding: 25px 0;
+    position: relative;
+    @include xs {
+      padding: 17px 0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include sm {
+        padding: 0 18px;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 80px;
+      bottom: 0;
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: $primary_white;
+  }
+
+  &__description {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $primary_white;
+  }
+
+  &__link-container {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__link-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    @include xs {
+      display: none;
+    }
+  }
+
+  &__link-rating {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: right;
+    color: $primary_white;
+    padding-right: 24px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-image: url("../images/Star.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: 0;
+      top: calc(50% - 16px / 2);
+    }
+  }
+
+  &__link-reviews {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    color: $primary_white;
+  }
+
+  &__content {
+    padding-top: 106px;
+    padding-bottom: 114px;
+    @include xs {
+      padding-top: 62px;
+      padding-bottom: unset;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      @include sm {
+        flex-direction: column;
+        align-items: center;
+      }
+      @include xs {
+        gap: 92px;
+      }
+    }
+
+    .header__title {
+      max-width: 393px;
+      margin-top: 96px;
+      margin-bottom: 20px;
+      @include sm {
+        text-align: center;
+        margin-top: 0;
+      }
+      @include xs {
+        margin-bottom: 24px;
+        font-size: 34px;
+        line-height: 44px;
+      }
+    }
+
+    .header__description {
+      max-width: 500px;
+      margin-bottom: 60px;
+      @include sm {
+        max-width: 392px;
+        text-align: center;
+      }
+      @include xs {
+        margin-bottom: 32px;
+      }
+    }
+
+    .header__link-description {
+      max-width: 140px;
+      margin-top: 8px;
+    }
+
+  }
+
+  &__left {
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__right {
+    margin-right: -30px;
+    @include xl {
+      margin-right: unset;
+    }
+    @include lg {
+      display: flex;
+      align-items: center;
+      margin-right: unset;
+    }
+  }
+
+  &__right img {
+    @include xl {
+      max-width: 820px;
+      height: auto;
+      width: 100%;
+    }
+    @include xs {
+      margin-bottom: -4px;
+    }
+  }
+}
